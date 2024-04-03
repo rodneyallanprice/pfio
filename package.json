@@ -1,0 +1,33 @@
+{
+  "name": "pfio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/fio.js",
+  "type": "module",
+  "types": "build/fio.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=v18.10.0"
+  },
+  "files": [
+    "build",
+    "Readme.md"
+  ],
+  "scripts": {
+    "test": "node --test test/test.js",
+    "build": "npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs-extra": "^11.2.0",
+    "rw-resource": "^1.0.5",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}
