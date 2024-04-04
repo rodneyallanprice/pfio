@@ -24,6 +24,60 @@ npm i pfio
 result[0] will have the content before the write.
 result[1] will have the new content.
 
+## APIs
+
+### readProtectedFile
+
+Reads the entire file as soon as no writes are occurring.
+
+#### Syntax
+
+```
+readProtectedFile(path: string)
+readProtectedFile(path: string, encoding: string)
+
+```
+
+#### Parameters
+
+    path (string) (required)
+        The path (relative or absolute) to the file
+
+    encoding (any)
+        The expected encoding. 
+
+#### Return value
+
+    Promise<string | buffer>
+
+### writeProtectedFile
+
+Replaces file when exclusive access can be obtained.
+
+#### Syntax
+
+```
+writeProtectedFile(path: string, content:  any)
+writeProtectedFile(path: string, content:  any, encoding: string)
+
+```
+
+#### Parameters
+
+    path (string) (required)
+        The path (relative or absolute) to the file
+
+    content (any) (required)
+        The data to be written
+
+    encoding (any)
+        The encoding of content. 
+
+#### Return value
+
+    Promise<string | buffer>
+
+
 ## Tests
 
 ```
