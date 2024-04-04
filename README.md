@@ -1,23 +1,23 @@
-# PFIO #
+# PTFIO #
 
-PFIO provides functions to read and write entire files in a synchronized way. Many readers can concurrently read a file until a write is requested. The write will block until all existing readers exit and all new readers block until the file write can be completed.
+PTFIO provides functions to read and write entire files in a synchronized way. Many readers can concurrently read a file until a write is requested. The write will block until all existing readers exit and all new readers block until the file write can be completed.
 
 ## Installation
 
 ```bash
-npm i pfio
+npm i ptfio
 ```
 
 ## Usage
 
 ```javascript
-    import pfio from 'pfio';
+    import ptfio from 'ptfio';
 
     const queue = [];
 
-    queue.push(pfio.readProtectedFile(Path));
-    queue.push(pfio.writeProtectFile(Path, newContent));
-    queue.push(pfio.readProtectedFile(Path));
+    queue.push(ptfio.readProtectedFile(Path));
+    queue.push(ptfio.writeProtectFile(Path, newContent));
+    queue.push(ptfio.readProtectedFile(Path));
     const results = Promise.all(queue);
 ```
 
