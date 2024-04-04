@@ -1,6 +1,6 @@
 {
   "name": "ptfio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "build/fio.js",
   "type": "module",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodneyallanprice/pfio"
+    "url": "https://github.com/rodneyallanprice/ptfio"
   },
   "author": "Rodney Price",
   "license": "ISC",
